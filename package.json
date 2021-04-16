@@ -6,7 +6,7 @@
   "private": true,
   "homepage": ".",
   "engines": {
-    "node": "15.9.0",
+    "node": "8.11.1",
     "npm": "1.4.29"
   },
   "dependencies": {
