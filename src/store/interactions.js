@@ -28,6 +28,7 @@ import { ETHER_ADDRESS } from '../helpers';
 export const loadWeb3 = async (dispatch) => {
 	if (typeof window.ethereum !== 'undefined') {
 		const web3 = new Web3(window.ethereum);
+		window.ethereum.enable();
 		dispatch(web3Loaded(web3));
 		return web3;
 	} else {
